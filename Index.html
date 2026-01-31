@@ -1,0 +1,22 @@
+<html>
+<head>
+    <script src="jquery.js"></script>
+    <script>
+        function getSize() {
+            var w = window, d = document, e = d.documentElement, g = d.getElementsByTagName('body')[0];
+            var x = w.innerWidth || e.clientWidth || g.clientWidth;
+            var y = w.innerHeight || e.clientHeight || g.clientHeight;
+            return { width: x, height: y }
+        }
+
+        $(document).ready(function () {
+            
+            var size = getSize();
+            $("body").append("<div style='font-size:28px;'>Height: " + size.height + "<br/>Width: " + size.width +  "</div>");
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>
